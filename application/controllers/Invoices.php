@@ -8,6 +8,7 @@ class Invoices extends CI_Controller {
         parent::__construct();
         $this->load->model("game");//Se llama al modelo
         $this->load->model("tournament");
+        $this->load->model("invoice");
     }
 
 
@@ -19,4 +20,18 @@ class Invoices extends CI_Controller {
         $this->load->view("footer");
 
     }
+    public function guardarFactura(){
+        $datosNuevoFactura=array(
+            "fecha_ft"=>$this->input->post('fecha_ft'),
+        );
+        print_r($datosNuevoFactura);
+        
+        if ($this->invoice->insertar($datosNuevoFactura)) {
+            redirect('invoices/index');
+        } 
+        else {
+            echo "<h1>Error</h1>";
+        }
+        
+    }   
 }

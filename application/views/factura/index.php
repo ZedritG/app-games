@@ -36,7 +36,7 @@ div.content {
 
       <h3 style="font-family:arial; color:white;"><b> Enter Game Fields </b></h3>
       <hr />
-      <form action="<?php echo site_url("invoice/guardarFactura")?>" method="post">
+      <form action="<?php echo site_url("invoices/guardarFactura")?>" method="post">
       <div class="form-group" style="color:white;">
           <label for="inputState">Name</label>
           <select id="inputState" class="form-control" name="fk_id_lt" id="fk_id_lt" required>
@@ -66,8 +66,8 @@ div.content {
             </select>
         </div>
         <div class="form-group" style="color:white;">
-          <label for="">Year</label>
-          <input type="date" class="form-control" name="años_lt" placeholder="Year" required>
+          <label for="">Date</label>
+          <input type="date" class="form-control" name="fecha_ft" placeholder="Year" required>
         </div>
         
         <button type="submit" class="btn btn-success">Guardar</button>
