@@ -31,7 +31,7 @@
                 <td class="text-center"> <?php echo $trabajadorTemporal-> cedula_tb; ?></td>
                 <td class="text-center"> <?php echo $trabajadorTemporal-> horas_tb; ?></td>
                 <td class="text-center"> 
-                <a href="<?php echo site_url('workers/editar'); ?>/<?php echo $trabajadorTemporal->id_tb; ?>" class="glyphicon glyphicon-pencil btn btn-warning">Editar</a>
+                <a href="<?php echo site_url('workers/editar'); ?>/<?php echo $trabajadorTemporal->id_tb; ?>" class="btn btn-warning">Editar</a>
                 <a href="<?php echo site_url('workers/borrar'); ?>/<?php echo $trabajadorTemporal->id_tb; ?>" class="glyphicon glyphicon-trash btn btn-danger">Eliminar</a>
                 </td>
             </tr>
